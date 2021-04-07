@@ -10,6 +10,16 @@ set(libRaskBLE_SRCS
     ${CMAKE_CURRENT_SOURCE_DIR}/src/raskble_plugin.h
     ${CMAKE_CURRENT_SOURCE_DIR}/src/raskble_plugin.cpp
 
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/characteristic.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/characteristic.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/constants.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/controller.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/controller.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/device.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/device.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/service.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/service.cpp
+
     ${CMAKE_CURRENT_SOURCE_DIR}/resources/qmldir
 )
 
@@ -35,7 +45,6 @@ target_link_libraries(${PROJECT_NAME}
     PRIVATE
         Qt${QT_VERSION_MAJOR}::Quick
         Qt${QT_VERSION_MAJOR}::QuickControls2
-        Qt${QT_VERSION_MAJOR}::Mqtt
         Qt${QT_VERSION_MAJOR}::Bluetooth
 )
 
