@@ -26,7 +26,7 @@ set(libRaskBLE_SRCS
 set(QT_INSTALL_QMLDIR "$ENV{QTDIR}/qml")
 set(plugin_PATH plugins/Rask/Ble)
 
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick QuickControls2 Mqtt Bluetooth REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick QuickControls2 Bluetooth REQUIRED)
 
 add_library(${PROJECT_NAME}
     SHARED
